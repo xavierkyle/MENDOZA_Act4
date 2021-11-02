@@ -1,0 +1,954 @@
+       /*GLOBAL*/
+       
+       body {
+           background-color: #2e2f63;
+           color: #555;
+           font-family: Arial, Helvetica, sans-serif;
+           font-size: 16px;
+           line-height: 1.6em;
+           margin: 0;
+       }
+       
+       .background {
+           background-image: linear-gradient(to bottom right, rgb(4, 6, 100), rgb(127, 40, 209));
+           background-image: cover;
+           width: 100%;
+       }
+       
+       .container {
+           max-width: 1320px;
+           margin: 0 auto;
+           overflow: hidden;
+       }
+       /*NAVIGATION*/
+       
+       .NavContainer {
+           overflow: hidden;
+           margin: auto;
+       }
+       
+       .icons {
+           padding: 0.4rem 0.1rem;
+           text-align: start;
+       }
+       
+       .title {
+           text-align: center;
+           font-size: 2rem;
+           font-weight: 1000;
+           padding-left: 1rem;
+           letter-spacing: 2px;
+           font-family: sans-serif;
+           cursor: default;
+       }
+       
+       #navbar {
+           background-color: rgba(23, 7, 78, 0.336);
+           color: #fff;
+           padding-bottom: 1%;
+           padding-top: .5%;
+           text-align: center;
+           justify-content: center;
+       }
+       
+       nav ul {
+           list-style: none;
+       }
+       
+       #navbar li {
+           display: inline-block;
+       }
+       
+       #navbar a {
+           color: #fff;
+           text-decoration: none;
+           font-weight: 600;
+           font-size: 1rem;
+           letter-spacing: 3px;
+           padding: .5rem 0 0 2rem;
+           text-shadow: 2px 2px 5px rgb(59, 59, 59);
+           font-family: sans-serif;
+           transition: opacity .5s ease;
+       }
+       
+       #navbar a:hover {
+           color: #8f90ff;
+       }
+       
+       #navbar i {
+           font-size: 1.5rem;
+           letter-spacing: 3px;
+           padding: .5rem 0 0 .1rem;
+           text-shadow: 2px 2px 5px rgb(59, 59, 59);
+           transition: opacity .5s ease;
+       }
+       
+       #navbar i:hover {
+           color: #8f90ff;
+       }
+       /*HOMEPAGE*/
+       
+       .intro {
+           flex: 1;
+           display: flex;
+           text-align: center;
+           align-items: center;
+           justify-content: center;
+           cursor: default;
+       }
+       
+       .intro-title {
+           line-height: 1.8;
+           color: rgb(255, 255, 255);
+           font-family: tahoma;
+           font-size: 3rem;
+           font-weight: 800;
+           padding: 4rem 0;
+           text-shadow: 2px 3px rgb(0, 0, 0);
+       }
+       
+       .intro h2 {
+           line-height: 1.8;
+           color: rgb(255, 255, 255);
+           font-family: tahoma;
+           font-size: 5rem;
+           font-weight: 1000;
+       }
+       
+       .intro p {
+           line-height: 1.8;
+           color: rgb(160, 148, 206);
+           font-family: tahoma;
+           font-size: 2rem;
+       }
+       
+       .intro em {
+           line-height: 1.8;
+           color: rgb(255, 255, 255);
+           font-family: tahoma;
+           font-size: 2rem;
+       }
+       
+       .intro del {
+           line-height: 1.8;
+           color: rgba(255, 255, 255, 0.87);
+           font-family: tahoma;
+           font-size: rem;
+       }
+       
+       .intro b {
+           line-height: 1.8;
+           color: rgb(255, 255, 255);
+           font-family: tahoma;
+           font-size: 2rem;
+       }
+       
+       .props1 {
+           opacity: 1;
+           padding: 0 0 1rem 0;
+           width: 80%;
+           height: auto;
+       }
+       /*NAVIGATION BUTTONS*/
+       
+       .button {
+           font-size: 18px;
+           border: none;
+           color: rgb(255, 0, 0);
+           padding: 8px 32px;
+           text-align: center;
+           text-decoration: none;
+           display: inline-block;
+           font-size: 16px;
+           margin: 4px 2px;
+           transition-duration: 0.4s;
+           cursor: pointer;
+       }
+       
+       .homebutton {
+           color: rgb(255, 0, 0);
+           text-decoration: none;
+           font-weight: bold;
+           font-size: 15px;
+           letter-spacing: 3px;
+           align-items: center;
+           text-shadow: 2px 2px 5px rgb(59, 59, 59);
+           font-family: sans-serif;
+       }
+       
+       .homebutton:hover {
+           color: rgb(252, 0, 0);
+       }
+       
+       .H_disabled {
+           opacity: 0.6;
+           cursor: not-allowed;
+           color: rgb(255, 255, 255);
+           text-decoration: none;
+           font-weight: bold;
+           font-size: 15px;
+           letter-spacing: 3px;
+           padding-left: 40px;
+           align-items: center;
+           text-shadow: 2px 2px 5px rgb(59, 59, 59);
+           font-family: sans-serif;
+       }
+       
+       .A_disabled {
+           opacity: 0.6;
+           cursor: not-allowed;
+           color: #fff;
+           text-decoration: none;
+           font-weight: bold;
+           font-size: 15px;
+           letter-spacing: 3px;
+           padding-left: 40px;
+           align-items: center;
+           text-shadow: 2px 2px 5px rgb(59, 59, 59);
+           font-family: sans-serif;
+       }
+       
+       .S_disabled {
+           opacity: 0.6;
+           cursor: not-allowed;
+           color: #fff;
+           text-decoration: none;
+           font-weight: bold;
+           font-size: 15px;
+           letter-spacing: 3px;
+           padding-left: 40px;
+           align-items: center;
+           text-shadow: 2px 2px 5px rgb(59, 59, 59);
+           font-family: sans-serif;
+       }
+       
+       .P_disabled {
+           opacity: 0.6;
+           cursor: not-allowed;
+           color: #fff;
+           text-decoration: none;
+           font-weight: bold;
+           font-size: 15px;
+           letter-spacing: 3px;
+           padding-left: 40px;
+           align-items: center;
+           text-shadow: 2px 2px 5px rgb(59, 59, 59);
+           font-family: sans-serif;
+       }
+       
+       .C_disabled {
+           opacity: 0.6;
+           cursor: not-allowed;
+           color: #fff;
+           text-decoration: none;
+           font-weight: bold;
+           font-size: 15px;
+           letter-spacing: 3px;
+           padding-left: 40px;
+           align-items: center;
+           text-shadow: 2px 2px 5px rgb(59, 59, 59);
+           font-family: sans-serif;
+       }
+       /*ABOUT*/
+       
+       .about {
+           flex: 1;
+           display: flex;
+           align-items: center;
+           text-align: left;
+           justify-content: center;
+           cursor: default;
+       }
+       
+       .about-title {
+           line-height: 1.8;
+           color: rgb(255, 255, 255);
+           font-family: tahoma;
+           font-size: 3rem;
+           font-weight: 800;
+           padding: 7rem 0;
+           letter-spacing: 3px;
+       }
+       
+       .about h2 {
+           line-height: 1;
+           color: rgb(255, 255, 255);
+           font-family: tahoma;
+           font-size: 4rem;
+       }
+       
+       .about strong {
+           line-height: 1.8;
+           color: rgb(160, 148, 206);
+           font-family: Arial, Helvetica, sans-serif;
+           font-size: 1.3rem;
+           text-align: left;
+       }
+       
+       .about p {
+           line-height: 1.8;
+           color: rgb(255, 255, 255);
+           font-family: tahoma;
+           font-size: 1.3rem;
+       }
+       
+       .about del {
+           line-height: 1.8;
+           color: rgba(255, 255, 255, 0.87);
+           font-family: tahoma;
+           font-size: 25px;
+       }
+       
+       .about b {
+           line-height: 1.8;
+           color: rgb(190, 158, 241);
+           font-family: tahoma;
+           font-size: 25px;
+       }
+       
+       .mypic {
+           opacity: 1;
+           height: auto;
+           max-width: 70%;
+           float: right;
+       }
+       
+       .aboutme {
+           margin: 0 auto;
+           max-width: 100%;
+           overflow: hidden;
+           text-align: left;
+       }
+       /*PROJECTS*/
+       
+       .project {
+           flex: 1;
+           flex-direction: column;
+           align-items: center;
+           text-align: center;
+           justify-content: center;
+           padding: 2rem;
+           height: 50rem;
+           cursor: default;
+       }
+       
+       .project h1 {
+           line-height: 1;
+           color: rgb(255, 255, 255);
+           font-family: tahoma;
+           font-size: 7rem;
+           letter-spacing: .2rem;
+       }
+       
+       .project strong {
+           line-height: 1.8;
+           color: rgb(160, 148, 206);
+           font-family: Arial, Helvetica, sans-serif;
+           font-size: 1.3rem;
+           text-align: left;
+       }
+       
+       .project p {
+           line-height: 1.8;
+           color: rgb(255, 255, 255);
+           font-family: tahoma;
+           font-size: 1.3rem;
+       }
+       
+       .project del {
+           line-height: 1.8;
+           color: rgba(255, 255, 255, 0.87);
+           font-family: tahoma;
+           font-size: 25px;
+       }
+       
+       .project b {
+           line-height: 1.8;
+           color: rgb(190, 158, 241);
+           font-family: tahoma;
+           font-size: 25px;
+       }
+       
+       .project-title {
+           line-height: 1.8;
+           color: rgb(255, 255, 255);
+           font-family: tahoma;
+           font-size: 3rem;
+           font-weight: 800;
+           letter-spacing: 3px;
+           display: flex;
+           flex-direction: row;
+           justify-content: space-between;
+           padding-right: 90px;
+       }
+       
+       div.gallery {
+           display: flex;
+           flex-direction: column;
+           width: 30%;
+       }
+       
+       div.gallery img:hover {
+           display: flex;
+           flex-direction: column;
+           width: 80;
+           border: 10px solid rgb(196, 181, 250);
+       }
+       
+       div.gallery img {
+           width: 100%;
+           height: fit-content;
+           padding: 10px;
+           border-radius: 30px;
+       }
+       
+       div.desc {
+           text-align: center;
+           color: rgb(255, 255, 255);
+           font-family: monospace;
+           text-shadow: 2px 2px 5px rgb(0, 0, 0);
+           letter-spacing: 1px;
+           font-size: 1.5rem;
+       }
+       /*SKILLS*/
+       
+       .skill {
+           flex: 1;
+           display: flex;
+           align-items: center;
+           text-align: left;
+           justify-content: center;
+           cursor: default;
+       }
+       
+       .skill-title {
+           line-height: 1.8;
+           color: rgb(255, 255, 255);
+           font-family: tahoma;
+           font-size: 3rem;
+           font-weight: 800;
+           padding: 7rem 0;
+           letter-spacing: 3px;
+           margin: 0 auto;
+       }
+       
+       .graphs {
+           margin: 0 auto;
+           max-width: 100%;
+           overflow: hidden;
+           text-align: left;
+       }
+       
+       .skill h1 {
+           line-height: 1;
+           color: rgb(255, 255, 255);
+           font-family: tahoma;
+           font-size: 2rem;
+       }
+       
+       .skill h2 {
+           line-height: 1;
+           color: rgb(255, 255, 255);
+           font-family: tahoma;
+           font-size: 3rem;
+       }
+       
+       .skill strong {
+           line-height: 1.8;
+           color: rgb(160, 148, 206);
+           font-family: Arial, Helvetica, sans-serif;
+           font-size: 1.3rem;
+           text-align: left;
+       }
+       
+       .skill p {
+           line-height: 1.8;
+           color: rgb(255, 255, 255);
+           font-family: tahoma;
+           font-size: 1.3rem;
+       }
+       
+       .skill del {
+           line-height: 1.8;
+           color: rgba(255, 255, 255, 0.87);
+           font-family: tahoma;
+           font-size: 25px;
+       }
+       
+       .skill b {
+           line-height: 1.8;
+           color: rgb(190, 158, 241);
+           font-family: tahoma;
+           font-size: 25px;
+       }
+       
+       #skills {
+           line-height: 1;
+           color: rgb(160, 148, 206);
+           font-family: tahoma;
+           font-size: 25px;
+           float: left;
+           width: 70%;
+           padding-top: 50px;
+       }
+       
+       .fill {
+           background-color: rgb(255, 255, 255);
+           width: 80%;
+           border-radius: 15px;
+       }
+       
+       .skill1 {
+           background-color: rgb(255, 61, 61);
+           width: 60%;
+           color: white;
+           padding: 1%;
+           text-align: right;
+           font-size: 20px;
+           border-radius: 15px;
+       }
+       
+       .skill2 {
+           background-color: rgb(238, 136, 68);
+           color: white;
+           padding: 1%;
+           text-align: right;
+           font-size: 20px;
+           border-radius: 15px;
+       }
+       
+       .skill3 {
+           background-color: rgb(76, 245, 104);
+           color: white;
+           padding: 1%;
+           text-align: right;
+           font-size: 20px;
+           border-radius: 15px;
+       }
+       
+       .skill4 {
+           background-color: rgb(219, 231, 49);
+           color: white;
+           padding: 1%;
+           text-align: right;
+           font-size: 20px;
+           border-radius: 15px;
+       }
+       
+       .skill5 {
+           background-color: rgb(59, 71, 238);
+           color: white;
+           padding: 1%;
+           text-align: right;
+           font-size: 20px;
+           border-radius: 15px;
+       }
+       
+       .html {
+           width: 70%;
+       }
+       
+       .php {
+           width: 35%;
+       }
+       
+       .react {
+           width: 40%;
+       }
+       
+       .design {
+           width: 70%;
+       }
+       
+       .coding {
+           width: 50%;
+       }
+       /*CONTACT*/
+       
+       .contact {
+           flex: 1;
+           display: flex;
+           align-items: center;
+           text-align: left;
+           justify-content: center;
+           cursor: default;
+       }
+       
+       .contact-title {
+           line-height: 1.8;
+           color: rgb(255, 255, 255);
+           font-family: tahoma;
+           font-size: 3rem;
+           font-weight: 800;
+           padding: 7rem 0;
+           letter-spacing: 3px;
+       }
+       
+       .contact h2 {
+           line-height: 1;
+           color: rgb(255, 255, 255);
+           font-family: tahoma;
+           font-size: 2rem;
+       }
+       
+       .contact strong {
+           line-height: 1.8;
+           color: rgb(160, 148, 206);
+           font-family: Arial, Helvetica, sans-serif;
+           font-size: 1.3rem;
+           text-align: left;
+       }
+       
+       .contact p {
+           line-height: 1.8;
+           color: rgba(255, 255, 255, 0.87);
+           font-family: tahoma;
+           font-size: 1.5rem;
+       }
+       
+       .contact del {
+           line-height: 1.8;
+           color: rgba(255, 255, 255, 0.87);
+           font-family: tahoma;
+           font-size: 25px;
+       }
+       
+       .contact b {
+           line-height: 1.8;
+           color: rgb(190, 158, 241);
+           font-family: tahoma;
+           font-size: 25px;
+       }
+       
+       .contact a {
+           color: #fff;
+           text-decoration: none;
+           font-weight: bold;
+           font-size: 3rem;
+           letter-spacing: 3px;
+           padding-left: 40px;
+           align-items: center;
+           text-shadow: 2px 2px 5px rgb(59, 59, 59);
+           font-family: tahoma;
+       }
+       
+       .contact a:hover {
+           color: #8f90ff;
+       }
+       /*FOOTER*/
+       
+       #main-footer {
+           background-color: rgba(23, 7, 78, 0.336);
+           color: #fff;
+           text-align: center;
+           margin-top: 50px;
+           overflow: hidden;
+           text-decoration: underline;
+       }
+       
+       #about-footer {
+           background-color: rgba(23, 7, 78, 0.336);
+           color: #fff;
+           text-align: center;
+           overflow: hidden;
+           text-decoration: underline;
+       }
+       
+       #skills-footer {
+           background-color: rgba(23, 7, 78, 0.336);
+           color: #fff;
+           text-align: center;
+           margin-top: 80px;
+           overflow: hidden;
+           text-decoration: underline;
+       }
+       
+       #contact-footer {
+           background-color: rgba(23, 7, 78, 0.336);
+           color: #fff;
+           text-align: center;
+           margin-top: 20px;
+           overflow: hidden;
+           text-decoration: underline;
+       }
+       
+       #project-footer {
+           background-color: rgba(23, 7, 78, 0.336);
+           color: #fff;
+           text-align: center;
+           margin-top: 0px;
+           overflow: hidden;
+           text-decoration: underline;
+       }
+       
+       @media screen and (max-width:600px) {
+           #navbar {
+               background-color: rgba(23, 7, 78, 0.336);
+               color: #fff;
+               padding-bottom: 1%;
+               padding-top: 1%;
+               padding-right: 1rem;
+               justify-content: center;
+           }
+           #navbar a {
+               color: #fff;
+               text-decoration: none;
+               font-weight: 600;
+               font-size: .8rem;
+               letter-spacing: 3px;
+               padding: .5rem 0 0 2rem;
+               text-shadow: 2px 2px 5px rgb(59, 59, 59);
+               font-family: sans-serif;
+               transition: opacity .5s ease;
+           }
+           #navbar i {
+               color: #fff;
+               font-weight: 600;
+               font-size: 1.6rem;
+               letter-spacing: 3px;
+               padding: .5rem 0 0 2rem;
+               text-shadow: 2px 2px 5px rgb(59, 59, 59);
+               transition: opacity .5s ease;
+           }
+           .intro-title {
+               line-height: 1.8;
+               color: rgb(255, 255, 255);
+               font-family: tahoma;
+               font-size: 2rem;
+               font-weight: 800;
+               padding: 4rem 0;
+               text-shadow: 2px 3px rgb(0, 0, 0);
+           }
+           .intro h2 {
+               line-height: 1.8;
+               color: rgb(255, 255, 255);
+               font-family: tahoma;
+               font-size: 2.5rem;
+               font-weight: 1000;
+           }
+           .intro p {
+               line-height: 1.8;
+               color: rgb(160, 148, 206);
+               font-family: tahoma;
+               font-size: 1.5rem;
+           }
+           .intro em {
+               line-height: 1.8;
+               color: rgb(255, 255, 255);
+               font-family: tahoma;
+               font-size: 1.5rem;
+           }
+           .intro del {
+               line-height: 1.8;
+               color: rgba(255, 255, 255, 0.87);
+               font-family: tahoma;
+               font-size: 1.5rem;
+           }
+           .intro b {
+               line-height: 1.8;
+               color: rgb(255, 255, 255);
+               font-family: tahoma;
+               font-size: 1.5rem;
+           }
+           .props1 {
+               opacity: 1;
+               padding: 0 0 1rem 0;
+               width: 80%;
+               height: auto;
+           }
+       }
+       
+       @media screen and (max-width:600px) {
+           .about-title {
+               line-height: 1.8;
+               color: rgb(255, 255, 255);
+               font-family: tahoma;
+               font-size: 2rem;
+               font-weight: 800;
+               padding: 7rem 0;
+               letter-spacing: 3px;
+               text-align: center;
+           }
+           .about h2 {
+               line-height: 1;
+               color: rgb(255, 255, 255);
+               font-family: tahoma;
+               font-size: 3.5rem;
+           }
+           .about strong {
+               line-height: 1.8;
+               color: rgb(160, 148, 206);
+               font-family: Arial, Helvetica, sans-serif;
+               font-size: 1rem;
+               text-align: left;
+           }
+           .about p {
+               line-height: 1.8;
+               color: rgb(255, 255, 255);
+               font-family: tahoma;
+               font-size: 1rem;
+           }
+           .about del {
+               line-height: 1.8;
+               color: rgba(255, 255, 255, 0.87);
+               font-family: tahoma;
+               font-size: 1rem;
+           }
+           .about b {
+               line-height: 1.8;
+               color: rgb(190, 158, 241);
+               font-family: tahoma;
+               font-size: 1rem;
+           }
+           .mypic {
+               opacity: 1;
+               height: auto;
+               max-width: 70%;
+               float: right;
+           }
+       }
+       
+       @media screen and (max-width:600px) {
+           .skill-title {
+               line-height: 1.8;
+               color: rgb(255, 255, 255);
+               font-family: tahoma;
+               font-size: 3rem;
+               font-weight: 800;
+               padding: 7rem 0;
+               letter-spacing: 3px;
+               margin: 0 auto;
+               text-align: center;
+           }
+           .skill h1 {
+               line-height: 1;
+               color: rgb(255, 255, 255);
+               font-family: tahoma;
+               font-size: 4rem;
+           }
+           .graphs {
+               margin: 0 auto;
+               max-width: 100%;
+               overflow: hidden;
+               padding-left: 2rem;
+               padding-right: 2rem;
+           }
+           #skills {
+               line-height: 1;
+               color: rgb(160, 148, 206);
+               font-family: tahoma;
+               font-size: 25px;
+               float: left;
+               width: 70%;
+               padding-top: 50px;
+           }
+       }
+       
+       @media screen and (max-width:700px) {
+           .project {
+               flex: 1;
+               flex-direction: column;
+               align-items: center;
+               text-align: center;
+               justify-content: center;
+               padding: 2rem;
+               height: 80rem;
+           }
+           .project h1 {
+               line-height: 1;
+               color: rgb(255, 255, 255);
+               font-family: tahoma;
+               font-size: 4rem;
+               letter-spacing: .2rem;
+           }
+           .project-title {
+               line-height: 1.8;
+               color: rgb(255, 255, 255);
+               font-family: tahoma;
+               font-size: 3rem;
+               font-weight: 800;
+               letter-spacing: 3px;
+               display: flex;
+               flex-direction: column;
+               justify-content: space-between;
+               padding-right: 1.5rem;
+           }
+           div.gallery {
+               display: flex;
+               flex-direction: row;
+               width: 100%;
+           }
+           div.gallery img:hover {
+               display: flex;
+               flex-direction: row;
+               width: 80;
+               border: 5px solid rgb(196, 181, 250);
+           }
+           div.gallery img {
+               width: 100%;
+               height: fit-content;
+               padding: 10px;
+               border-radius: 30px;
+           }
+           div.desc {
+               text-align: center;
+               color: rgb(255, 255, 255);
+               font-family: monospace;
+               text-shadow: 2px 2px 5px rgb(0, 0, 0);
+               letter-spacing: 1px;
+               font-size: 1rem;
+           }
+       }
+       
+       @media screen and (max-width:1120px) {
+           .contact {
+               flex: 1;
+               display: flex;
+               align-items: center;
+               text-align: left;
+               justify-content: center;
+           }
+           .contact-title {
+               line-height: 1.8;
+               color: rgb(255, 255, 255);
+               font-family: tahoma;
+               font-size: 3rem;
+               font-weight: 800;
+               padding: 7rem 0;
+               letter-spacing: 3px;
+               padding-right: 2rem;
+               padding-left: 2rem;
+           }
+           .contact h2 {
+               line-height: 1;
+               color: rgb(255, 255, 255);
+               font-family: tahoma;
+               font-size: 1.7rem;
+           }
+           .contact p {
+               line-height: 1.8;
+               color: rgba(255, 255, 255, 0.87);
+               font-family: tahoma;
+               font-size: .6rem;
+           }
+           .contact b {
+               line-height: 1.8;
+               color: rgb(190, 158, 241);
+               font-family: tahoma;
+               font-size: 25px;
+           }
+           .contact a {
+               color: #fff;
+               text-decoration: none;
+               font-weight: bold;
+               font-size: 3rem;
+               letter-spacing: 3px;
+               padding-left: 40px;
+               align-items: center;
+               text-shadow: 2px 2px 5px rgb(59, 59, 59);
+               font-family: tahoma;
+           }
+           .contact a:hover {
+               color: #8f90ff;
+           }
+       }
